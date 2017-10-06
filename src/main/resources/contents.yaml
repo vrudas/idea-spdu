@@ -1,0 +1,76 @@
+01. IDE Setup:
+      IDEA versions Release vs EAP ?
+      Memory indicator Appearance & Behavior -> Appearance -> Show memory indicator
+      IDEA Heap size setup Edit custom VM Options, Xms and Xmx
+      Auto file save System Settings -> File save automatically
+      Custom key mapping if needed System Settings -> Keymap -> (ex rebuild project || refresh Gradle)
+      Auto import on the fly  Editor -> General -> Auto Import -> Autoimport on the fly
+02. Useful Plugins:
+      Key  promoter
+        Learn shortcut
+        Use shortcut
+        Tip how to learn shortcut
+      String Manipulation
+      IDE Features Trainer
+03. Editor Basics:
+      Same rules for text editing like in other text editors
+      Code block selection -> Ctrl(Command) + W and Unselection with Ctrl + Shift + W
+      Commentaries Single line, Multiple Line -> Ctrl + / , Ctrl + Shift + /
+      Delete line -> Ctrl + Y
+      Duplicate line -> Ctrl + D
+      Moving lines -> Alt + Shift + Arrow
+      Moving block -> Ctrl + Shift + Arrow
+04. Code completion:
+      Basic code completion -> Ctrl + Space
+      Smart code completion -> Ctrl + Shift + Space (same  variable names)
+05. Refactoring:
+      Rename class, field, method -> Shift + F6
+      Add method argument -> Ctrl + F6
+      Extract to variable ->  Ctrl + Alt + V
+      Extract to method ->  Ctrl + Alt + M
+      Extract to constant -> Ctrl + Alt + C
+      Extract to method parameter -> Ctrl + Alt + P
+06. Working with code:
+      Code formatting -> Ctrl + Alt + L
+      Parameter Info -> Ctrl + P
+      JavaDoc Popup -> Ctrl + J (macOS) and Ctrl +  Q (Win)
+      Method definition ->  Ctrl(Command) + Shift + I - useful(new for me)))
+      Change case of String values -> Ctrl + Shift + U
+      Examples of usage of String Manipulation plugin
+      Multiple cursor example
+07. Live templates:
+      sout
+      soutv
+      soutp
+      Surround with -> Ctrl + Alt + T
+      Ctrl + J
+08. Code generation:
+      Simple POJO example with get/set and to String
+09. Navigation:
+      Recent Files -> Ctrl(Command) + E
+      Auto scroll
+      To Source
+      From Source
+      Declaration Implementation -> Ctrl + B
+      Interface implementation -> Ctrl + Alt + B
+      File Structure -> Ctrl + F12
+10. Searching:
+      Search everywhere -> Shift + Shift
+      Find in file -> Ctrl(Command) + F
+      Find in path -> Ctrl + Shift + F
+      Find usages -> (Ctrl) +  Alt + F7
+11. IDE Features:
+      Issue navigation
+      Color Picker
+      Editor Clipboard
+      Productivity guide
+12. REST Client:
+13. DB Tool:
+14. Working with Git:
+      Commit and Push
+      Undo commit
+      Change commit message
+      Working with shelf
+      Merge ???
+15. Debug mode:
+16. Unit test creation:
