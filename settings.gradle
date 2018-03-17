@@ -1,3 +1,4 @@
 rootProject.name = 'idea-spdu'
 rootProject.name = 'idea-spdu'
+include 'tests-gh'
 
