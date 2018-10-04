@@ -74,3 +74,5 @@
 14. Not related to IDEA questions:
     - JDK 8 by Oracle is enough?
     - Usage of Project Lombok in projects?
+
+![qr code link](https://raw.githubusercontent.com/vrudas/idea-spdu/master/qrcode.png "Link to file")
