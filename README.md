@@ -74,8 +74,3 @@
 14. Not related to IDEA questions:
     - JDK 8 by Oracle is enough?
     - Usage of Project Lombok in projects?
-
-
-
-
-
