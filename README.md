@@ -36,6 +36,7 @@
 08. Productivity tips:
     - IDE Features Trainer
     - How to learn shortcuts(hot keys) of IntelliJ IDEA? (Key Promoter, Print)
+    - Shortcuts remapping
     - Productivity Guide
     - Custom live templates
     - Color picker
@@ -74,5 +75,6 @@
 14. Not related to IDEA questions:
     - JDK 8 by Oracle is enough?
     - Usage of Project Lombok in projects?
+    - Fat JAR (Single jar file with all included libs)
 
 ![qr code link](https://raw.githubusercontent.com/vrudas/idea-spdu/master/qrcode.png "Link to file")
