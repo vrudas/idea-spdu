@@ -1,8 +1,8 @@
 package io.testsgh.boottest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.test.web.servlet.MockMvc;
 import org.testng.annotations.AfterMethod;
@@ -11,11 +11,13 @@ import org.testng.annotations.Test;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest
-@AutoConfigureMockMvc
+@WebMvcTest
+//@SpringBootTest
+//@AutoConfigureMockMvc
 public class UserControllerTest extends AbstractTestNGSpringContextTests {
 
     @Autowired
+    @MockBean
     private UserRepository userRepository;
 
     @Autowired

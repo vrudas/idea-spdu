@@ -50,7 +50,7 @@ public class UserControllerTest extends AbstractTestNGSpringContextTests {
     @Test
     public void testGet() throws Exception {
         mockMvc.perform(get("/users/flash"))
-            .andExpect(status().isOk());
+            .andExpect(status().isNotFound());
     }
 
     @Test

@@ -5,36 +5,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.Optional;
 
 import static org.mockito.ArgumentMatchers.eq;
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static org.testng.Assert.assertTrue;
 
 @SpringBootTest
 public class BootApplicationTest extends AbstractTestNGSpringContextTests {
-
-
-    @BeforeMethod
-    public void setUp1() {
-
-    }
-
-    @DataProvider(name = "Name")
-    public static Object[][] Name() {
-        return new Object[][]{
-            {}
-        };
-    }
-
-    @Test
-    public void testName() {
-
-    }
 
     @MockBean
     @Autowired
@@ -42,15 +22,22 @@ public class BootApplicationTest extends AbstractTestNGSpringContextTests {
 
     @BeforeMethod
     public void setUp() {
-        User mockUser = mock(User.class);
-        when(mockUser.getLogin()).thenReturn("flash");
-        when(mockUser.getPassword()).thenReturn("barry_allen");
+        User user = createUser();
 
-        when(userRepository.findById(eq("flash"))).thenReturn(Optional.of(mockUser));
+        when(userRepository.findById(eq("flash"))).thenReturn(Optional.of(user));
+    }
+
+    private User createUser() {
+        User user = new User();
+
+        user.setLogin("flash");
+        user.setPassword("barry_allen");
+
+        return user;
     }
 
     @Test
-    public void testMockBean() {
+    public void user_exists() {
         assertTrue(userRepository.findById("flash").isPresent());
     }
 

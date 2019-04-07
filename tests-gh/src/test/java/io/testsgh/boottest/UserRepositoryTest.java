@@ -11,6 +11,7 @@ import java.util.stream.StreamSupport;
 
 import static org.testng.Assert.assertTrue;
 
+//@DataJpaTest
 @SpringBootTest
 public class UserRepositoryTest extends AbstractTestNGSpringContextTests {
 
